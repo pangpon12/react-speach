@@ -14,7 +14,6 @@ const Dictaphone = () => {
     return <span>Browser ไม่ซัพพอร์ต.</span>;
   }
   
-  SpeechRecognition.startListening
   
   
   return (
