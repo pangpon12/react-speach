@@ -9,16 +9,17 @@ const Dictaphone = () => {
     browserSupportsSpeechRecognition
   } = useSpeechRecognition();
 
+
   if (!browserSupportsSpeechRecognition) {
-    return <span>Browser doesn't support speech recognition.</span>;
+    return <span>Browser ไม่ซัพพอร์ต.</span>;
   }
 
   return (
     <div>
-      <p>Microphone: {listening ? 'on' : 'off'}</p>
-      <button onClick={SpeechRecognition.startListening}>Start</button>
-      <button onClick={SpeechRecognition.stopListening}>Stop</button>
-      <button onClick={resetTranscript}>Reset</button>
+      <p>Microphone: {listening ? 'เปิด' : 'ปิด'}</p>
+      <button onClick={SpeechRecognition.startListening}>เริ่ม</button>
+      <button onClick={SpeechRecognition.stopListening}>หยุด</button>
+      <button onClick={resetTranscript}>รีเซ็ท</button>
       <p>{transcript}</p>
     </div>
   );
