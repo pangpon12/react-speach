@@ -13,7 +13,10 @@ const Dictaphone = () => {
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser ไม่ซัพพอร์ต.</span>;
   }
-
+  
+  SpeechRecognition.startListening
+  
+  
   return (
     <div>
       <p>Microphone: {listening ? 'เปิด' : 'ปิด'}</p>
